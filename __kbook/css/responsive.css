@@ -1,0 +1,65 @@
+/* -----------------------------------------------------------------------------
+ * Copyright (c) 2026 Kirubakaran
+ * SPDX-License-Identifier: MIT
+ * File        : responsive.css
+ * Description : Provides responsive breakpoints and mobile layout adjustments.
+ * -------------------------------------------------------------------------- */
+
+/*
+  Handles outline panel toggle (desktop + viewport)
+  Mobile: collapse into tree-only view
+*/
+
+@media (max-width: 768px) {
+
+  #main-header {
+    height: 40px;
+    padding: 0 8px;
+  }
+
+  .header-title {
+    font-size: 18px;
+  }
+
+  #main-header #main-tools {
+    display: none;
+  }
+
+  #editor-toolbar #main-tools {
+    display: flex;
+    gap: 2px;
+  }
+
+  #editor-toolbar #main-tools span {
+    font-size: 14px;
+    width: 18px;
+    padding: 1px;
+  }
+
+  #editor-toolbar #editor-minimap,
+  #editor-toolbar #editor-wrap,
+  #editor-toolbar #editor-permalink {
+    display: none;
+  }
+
+  #app {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 40px);
+  }
+
+  #main,
+  #right,
+  #statusbar,
+  .gutter {
+    display: none !important;
+  }
+
+  #sidebar {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    border-right: none;
+  }
+}

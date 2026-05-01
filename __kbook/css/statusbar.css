@@ -1,0 +1,93 @@
+/* -----------------------------------------------------------------------------
+ * Copyright (c) 2026 Kirubakaran
+ * SPDX-License-Identifier: MIT
+ * File        : statusbar.css
+ * Description : Provides status bar visuals and alignment rules.
+ * -------------------------------------------------------------------------- */
+
+#statusbar {
+  height: 24px;
+  background: #0f0f0f;
+  border-top: 1px solid #333;
+  color: #c7c7c7;
+  display: grid;
+  grid-template-columns: auto 150px minmax(0, 1.4fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+#vendor,
+#status-left,
+#status-center,
+#status-right {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+#vendor,
+#status-left {
+  display: flex;
+  align-items: center;
+}
+
+#status-left {
+  width: 150px;
+  flex: 0 0 150px;
+  height: 100%;
+}
+
+#status-left::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #333;
+  margin-right: 10px;
+  flex: 0 0 auto;
+}
+
+#vendor {
+  color: #bdbdbd;
+  gap: 8px;
+}
+
+#vendor .vendor-brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+#vendor .vendor-build-time {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  border-left: 1px solid #333;
+  padding-left: 8px;
+  flex: 0 0 auto;
+}
+
+#vendor .vendor-logo {
+  height: 10px;
+  width: auto;
+  margin-left: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+#status-center {
+  text-align: center;
+  color: #ddd;
+}
+
+#status-right {
+  text-align: right;
+  color: #aaa;
+}
+
+#status-left .codicon {
+  margin-right: 6px;
+}

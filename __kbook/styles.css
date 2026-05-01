@@ -1,0 +1,19 @@
+/* -----------------------------------------------------------------------------
+ * Copyright (c) 2026 Kirubakaran
+ * SPDX-License-Identifier: MIT
+ * File        : styles.css
+ * Description : Provides top-level CSS imports for the KBook UI.
+ * -------------------------------------------------------------------------- */
+@import "css/base.css";
+@import "css/layout.css";
+@import "css/responsive.css";
+@import "css/tree.css";
+@import "css/tabs.css";
+@import "css/toolbar.css";
+@import "css/preview.css";
+@import "css/outline.css";
+@import "css/book.css";
+@import "css/statusbar.css";
+@import "css/toast.css";
+@import "css/scrollbars.css";
+@import "css/overrides.css";

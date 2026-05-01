@@ -1,0 +1,32 @@
+/* -----------------------------------------------------------------------------
+ * Copyright (c) 2026 Kirubakaran
+ * SPDX-License-Identifier: MIT
+ * File        : preview.css
+ * Description : Provides preview pane layout and content presentation styles.
+ * -------------------------------------------------------------------------- */
+
+/* Preview surface shares grid cell with #editor */
+#preview {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+#preview.show {
+  display: block;
+}
+
+/* Ensure editor/preview fill their container (do not force grid placement) */
+#preview,
+#editor {
+  width: 100%;
+  height: 100%;
+}
+
+/* Preview iframe fills the container */
+#preview-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #1e1e1e;
+}

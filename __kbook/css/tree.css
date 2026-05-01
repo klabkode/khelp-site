@@ -1,0 +1,286 @@
+/* -----------------------------------------------------------------------------
+ * Copyright (c) 2026 Kirubakaran
+ * SPDX-License-Identifier: MIT
+ * File        : tree.css
+ * Description : Provides sidebar file tree styling and node interaction states.
+ * -------------------------------------------------------------------------- */
+
+#sidebar {
+  width: 280px;
+  background-color: #1b1b1b;
+  color: #ccc;
+  border-right: 1px solid #333;
+}
+
+#sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  padding: 0 10px 0 3px;
+  background: #1b1b1b;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#sidebar-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #4FC3F7;
+  pointer-events: none;
+}
+
+#sidebar h3 {
+  margin: 0;
+  padding: 0 8px;
+  line-height: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #bbb;
+  background-color: transparent;
+}
+
+#sidebar-header .title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  margin: 0;
+  padding: 0 8px;
+  line-height: 35px;
+  color: #bbb;
+  background-color: transparent;
+}
+
+.sidebar-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  align-self: center;
+}
+
+.sidebar-actions .codicon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  line-height: 1;
+  font-size: 16px;
+  color: #bbb;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.sidebar-actions .codicon:hover {
+  color: #fff;
+  background-color: #2a2a2a;
+}
+
+.sidebar-actions .tree-toggle-slot {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+}
+
+.sidebar-actions .tree-toggle-slot .tree-toggle-icon {
+  position: absolute;
+  inset: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border-radius: 2px;
+  transition: opacity 0.15s ease, color 0.15s, background-color 0.15s;
+}
+
+.sidebar-actions .tree-toggle-slot .tree-toggle-icon.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#sidebar-footer {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 10px;
+  border-top: 1px solid #333;
+  background: inherit;
+}
+
+#sidebar-footer #dirstats {
+  margin: 0;
+  font-size: 12px;
+  color: #9f9f9f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#file-search {
+  width: calc(100% - 30px);
+  margin: 6px 10px;
+  padding: 4px 8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  border-radius: 0;
+  color: #ccc;
+  font-size: 12px;
+}
+
+#file-search:focus {
+  outline: none;
+  border-bottom-color: #4FC3F7;
+}
+
+.tree {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  font-size: 16px;
+}
+
+.tree li {
+  position: relative;
+  padding: 5px 8px 5px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tree li:hover {
+  background-color: #2a2d2e;
+}
+
+.tree li.folder.expanded:hover {
+  background-color: transparent;
+}
+
+.tree li.selected {
+  background-color: #094771;
+  color: white;
+}
+
+/* Shade only the expanded folder that contains the currently selected item. */
+.tree li.folder.expanded.active-context,
+.tree li.folder.expanded.active-context>ul {
+  background-color: #2d2d2d;
+}
+
+/* If a deeper child folder is also active-context & expanded, clear parent’s shade (modern :has) */
+.tree li.folder.expanded.active-context:has(> ul > li.folder.expanded.active-context),
+.tree li.folder.expanded.active-context:has(> ul > li.folder.expanded.active-context)>ul {
+  background-color: transparent;
+}
+
+.tree li.folder.expanded:not(.active-context),
+.tree li.folder.expanded:not(.active-context)>ul {
+  background-color: transparent;
+}
+
+/* JS fallback classes (applied by tree.js when :has is missing) */
+.tree li.folder.shade-block,
+.tree li.folder.shade-block>ul {
+  background-color: #2d2d2d;
+}
+
+.tree .folder::before {
+  font-family: "codicon";
+  content: "\eb04";
+  /* codicon-gripper */
+  position: absolute;
+  left: 5px;
+  font-size: 16px;
+  color: #4FC3F7;
+}
+
+.tree .folder.expanded::before {
+  content: "\eb04";
+  /* codicon-gripper */
+  color: #4FC3F7;
+  font-size: 16px;
+}
+
+.tree li.folder>.name {
+  padding: 10px;
+  font-weight: 600;
+  color: #4FC3F7;
+}
+
+.tree .file::before {
+  font-family: "codicon";
+  content: "\ea7b";
+  /* codicon-file */
+  position: absolute;
+  left: 5px;
+  color: #c5c5c5;
+}
+
+.tree li.file>.name {
+  padding: 10px;
+  font-size: 13px;
+}
+
+.tree .arrow {
+  font-family: "codicon";
+  content: "\eab8";
+  position: absolute;
+  left: 10px;
+  font-size: 12px;
+  color: #c5c5c5;
+  transform: rotate(0deg);
+}
+
+.tree .expanded>.arrow {
+  transform: rotate(90deg);
+}
+
+.tree ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 5px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#tree-skeleton {
+  padding: 8px 10px 12px 10px;
+}
+
+#tree-skeleton.hidden {
+  display: none;
+}
+
+#file-tree.hidden-tree {
+  display: none;
+}
+
+.skeleton-item {
+  height: 14px;
+  margin: 8px 0;
+  border-radius: 2px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.07) 25%, rgba(255, 255, 255, 0.12) 37%, rgba(255, 255, 255, 0.07) 63%);
+  background-size: 400% 100%;
+  animation: skeleton-shimmer 1.2s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}

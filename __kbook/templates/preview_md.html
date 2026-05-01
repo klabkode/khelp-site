@@ -1,0 +1,290 @@
+<!--
+  Copyright (c) 2026 Kirubakaran
+  SPDX-License-Identifier: MIT
+  File        : preview_md.html
+  Description : Provides an HTML template for Markdown previews.
+-->
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITLE}}</title>
+
+<!-- Syntax highlighting (GitHub Dark style) -->
+<link rel="stylesheet" id="hljs-css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css">
+
+<style>
+  :root {
+    /* VS Code (Dark+) inspired tokens */
+    --vscode-font: system-ui, -apple-system, Segoe UI, Roboto, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    --vscode-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+    --vscode-bg: #1e1e1e;
+    --vscode-fg: #d4d4d4;
+    --vscode-heading: #e5e5e5;
+    --vscode-border: #2d2d2d;
+    --vscode-panel: #1b1b1b;
+    --vscode-panel-contrast: #1b1b1b;
+    --vscode-inlinecode-bg: #1f1f1f;
+    --vscode-code-border: #2d2d2d;
+    --vscode-link: #4ea6ff;
+    --vscode-blockquote: #808080;
+    --vscode-table-row: #1f1f1f;
+    --vscode-hr: #303030;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    margin: 24px;
+    background: var(--vscode-bg);
+    color: var(--vscode-fg);
+    font: 13.5px/1.6 var(--vscode-font);
+  }
+
+  .vscode-body {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* Headings */
+  .vscode-body h1,
+  .vscode-body h2,
+  .vscode-body h3,
+  .vscode-body h4,
+  .vscode-body h5,
+  .vscode-body h6 {
+    color: var(--vscode-heading);
+    line-height: 1.25;
+    margin: 24px 0 8px;
+    font-weight: 600;
+  }
+
+  .vscode-body h1 {
+    font-size: 1.8rem;
+    border-bottom: 1px solid var(--vscode-border);
+  }
+
+  .vscode-body h2 {
+    font-size: 1.55rem;
+    border-bottom: 1px solid var(--vscode-border);
+  }
+
+  .vscode-body h3 {
+    font-size: 1.35rem;
+    border-bottom: 1px solid var(--vscode-border);
+  }
+
+  /* Links */
+  .vscode-body a {
+    color: var(--vscode-link);
+    text-decoration: none;
+  }
+
+  .vscode-body a:hover {
+    text-decoration: underline;
+  }
+
+  /* Lists */
+  .vscode-body ul,
+  .vscode-body ol {
+    padding-left: 1.4em;
+  }
+
+  /* Blockquote */
+  .vscode-body blockquote {
+    border-left: 4px solid var(--vscode-blockquote);
+    color: #c9c9c9;
+    background: var(--vscode-panel);
+    padding: 8px 12px;
+    margin-left: 8px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* Inline code */
+  .vscode-body code {
+    font-family: var(--vscode-mono);
+    font-size: 0.95em;
+    background: var(--vscode-inlinecode-bg);
+    border: 1px solid var(--vscode-code-border);
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+
+  /* Code blocks */
+  .vscode-body pre {
+    background: var(--vscode-bg);
+    /* blend with editor background */
+    border: 1px solid var(--vscode-code-border);
+    border-radius: 6px;
+    overflow: auto;
+    padding: 12px;
+  }
+
+  .vscode-body pre code {
+    display: block;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    font-size: 0.95em;
+    line-height: 1.45;
+  }
+
+  /* Tables */
+  .vscode-body table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid var(--vscode-border);
+    border-radius: 4px;
+  }
+
+  .vscode-body th,
+  .vscode-body td {
+    border: 1px solid var(--vscode-border);
+    padding: 6px 10px;
+  }
+
+  .vscode-body th {
+    background: var(--vscode-panel-contrast);
+    font-weight: 600;
+  }
+
+  .vscode-body tr:nth-child(even) td {
+    background: var(--vscode-table-row);
+  }
+
+  /* Horizontal rule */
+  .vscode-body hr {
+    height: 1px;
+    border: 0;
+    background: var(--vscode-hr);
+    margin: 24px 0;
+  }
+
+  /* Images */
+  .vscode-body img {
+    max-width: 100%;
+    display: inline-block;
+  }
+
+  /* Thin scrollbars - cross browser */
+  * {
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: var(--vscode-border) var(--vscode-bg);
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+    /* vertical scrollbar */
+    height: 6px;
+    /* horizontal scrollbar */
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--vscode-bg);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--vscode-border);
+    border-radius: 1px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  *::-webkit-scrollbar-corner {
+    background: var(--vscode-bg);
+  }
+</style>
+
+<div id="fileContent" class="vscode-body"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.3.2/markdown-it.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js"></script>
+<script>
+  function decodeB64(b) {
+    try { return decodeURIComponent(escape(atob(b))); }
+    catch (e) { return atob(b); }
+  }
+
+  function renderMarkdown() {
+    try {
+      var content = decodeB64("{{CONTENT_B64}}");
+      var md = window.markdownit({
+        // Security: disallow raw HTML in markdown
+        html: false,
+        linkify: true,
+        breaks: false,
+        // Safer highlighting: explicit language first, then auto-detect, then escape
+        highlight: function (str, lang) {
+          try {
+            if (window.hljs) {
+              // Try explicit language first
+              if (lang && hljs.getLanguage(lang)) {
+                return '<pre><code class="hljs language-' + lang + '">' +
+                  hljs.highlight(str, { language: lang, ignoreIllegals: true }).value +
+                  '</code></pre>';
+              }
+              // Fallback to auto-detection if no language specified
+              if (!lang) {
+                return '<pre><code class="hljs">' +
+                  hljs.highlightAuto(str).value +
+                  '</code></pre>';
+              }
+            }
+          } catch (_) { }
+          // Final fallback: escape content if highlight fails
+          return '<pre><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+        }
+      });
+
+      var unsafeHtml = md.render(content);
+      var safeHtml = (window.DOMPurify ? window.DOMPurify.sanitize(unsafeHtml, { USE_PROFILES: { html: true } }) : unsafeHtml);
+      var target = document.getElementById('fileContent');
+      target.innerHTML = safeHtml;
+
+      // Disable task list checkboxes (like VS Code)
+
+      target.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.disabled = true);
+      try { parent.postMessage({ type: 'kbook-md-ready' }, '*'); } catch (_) { }
+    } catch (err) {
+      try { parent.postMessage({ type: 'kbook-md-failed' }, '*'); } catch (_) { }
+    }
+  }
+
+  // Receive heading IDs and scroll commands from app.js.
+  window.addEventListener('message', function (e) {
+    if (!e.data || typeof e.data !== 'object') return;
+    if (e.data.type === 'kbook:setHeadingIds') {
+      var ids = Array.isArray(e.data.ids) ? e.data.ids : [];
+      var nodes = document.querySelectorAll('#fileContent h1,#fileContent h2,#fileContent h3,#fileContent h4,#fileContent h5,#fileContent h6');
+      for (var i = 0; i < nodes.length; i++) {
+        if (ids[i]) nodes[i].id = ids[i];
+      }
+    } else if (e.data.type === 'scrollToId') {
+      var el = e.data.id && document.getElementById(e.data.id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else if (e.data.type === 'scrollTop') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (e.data.type === 'scrollBottom') {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+  });
+
+  window.addEventListener('load', function () {
+    var css = document.getElementById('hljs-css');
+    if (css && !css.sheet) {
+      // Wait for highlight CSS to load, then render; fallback after 500ms
+      css.addEventListener('load', renderMarkdown, { once: true });
+      setTimeout(renderMarkdown, 500);
+    } else {
+      renderMarkdown();
+    }
+  });
+</script>

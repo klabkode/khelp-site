@@ -1,0 +1,136 @@
+<!--
+  Copyright (c) 2026 Kirubakaran
+  SPDX-License-Identifier: MIT
+  File        : index.html.in
+  Description : Main HTML template for the KBook explorer.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ PAGE_TITLE }}</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📘</text></svg>">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+  <link rel="preload" href="__kbook/styles.css" as="style">
+
+  <link rel="stylesheet" href="__kbook/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vscode/codicons/dist/codicon.css">
+
+  <!-- Markdown preview (with highlight.js) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css">
+</head>
+
+<body class="vscode-theme-dark kbook-shell">
+  <div id="main-header" role="banner">
+    <div class="header-left">
+      <h3 class="header-title">{{ APP_NAME }}</h3>
+    </div>
+    <div class="header-right">
+      <div id="main-tools">
+        <span id="nav-back" class="codicon codicon-arrow-left" title="Navigate Back (Alt+←)"></span>
+        <span id="nav-forward" class="codicon codicon-arrow-right" title="Navigate Forward (Alt+→)"></span>
+        {% if REPO_URL and REPO_URL != '#' %}
+        <span id="open-repo" class="codicon codicon-github-inverted" title="Open Repository" data-url="{{ REPO_URL }}"></span>
+        {% endif %}
+        <span id="clear-cache" class="codicon codicon-refresh" title="Reload"></span>
+        <span id="open-help" class="codicon codicon-question" title="Help / Usage"></span>
+        <span id="toggle-outline-panel" class="codicon codicon-layout-sidebar" title="Toggle Outline panel" aria-pressed="true"></span>
+        <img class="header-icon" src="__kbook/icons/kodex_logo_128x65.png" alt="Kbook logo">
+      </div>
+    </div>
+  </div>
+
+  <div id="app" role="application" aria-label="KBook Shell">
+    <div id="sidebar" aria-label="Sidebar Left">
+      <div id="sidebar-header">
+        <span class="title">XPLORER</span>
+        <div class="sidebar-actions">
+          <div class="tree-toggle-slot" aria-label="Tree expand/collapse control">
+            <span id="tree-expand-all" class="codicon codicon-expand-all tree-toggle-icon" title="Expand all folders"
+              aria-label="Expand all folders" role="button" tabindex="0"></span>
+            <span id="tree-collapse-all" class="codicon codicon-collapse-all tree-toggle-icon is-hidden"
+              title="Collapse all folders" aria-label="Collapse all folders" role="button" tabindex="-1"
+              aria-hidden="true"></span>
+          </div>
+          <span id="search-toggle" class="codicon codicon-search" title="Toggle file search"
+            aria-label="Toggle file search" role="button" tabindex="0"></span>
+        </div>
+      </div>
+      <input type="text" id="file-search" placeholder="Search files..." style="display:none;" />
+      <div id="tree-skeleton" aria-hidden="true">
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+      </div>
+      <ul id="file-tree" class="tree" role="tree" aria-label="File explorer"></ul>
+      <div id="sidebar-footer">
+        <p id="dirstats">— Directories — Files</p>
+      </div>
+    </div>
+
+    <div id="main" aria-label="Reader">
+      <div id="editor-toolbar">
+        <div id="tabs"></div>
+        <div class="editor-tools">
+          <span id="editor-preview" class="codicon codicon-eye" title="Toggle Preview (MD/HTML)"></span>
+          <span id="editor-permalink" class="codicon codicon-link" title="Copy permalink to this file/line"></span>
+          <span id="editor-copy-path" class="codicon codicon-copy" title="Copy file path"></span>
+          <span id="editor-search" class="codicon codicon-search" title="Search (Ctrl+F)"></span>
+          <span id="editor-wrap" class="codicon codicon-word-wrap" title="Toggle Word Wrap (Alt+c)"></span>
+          <span id="editor-minimap" class="codicon codicon-map" title="Toggle Minimap (Alt+m)"></span>
+          <span id="editor-save" class="codicon codicon-download" title="Download file (Ctrl+s)"></span>
+          <span id="scroll-toggle" class="codicon codicon-fold" title="Scroll to bottom"></span>
+        </div>
+      </div>
+      <div id="breadcrumbs" aria-label="Breadcrumbs"></div>
+      <div id="content">
+        <div id="editor"></div>
+        <div id="preview">
+          <!-- Sandbox: allow-scripts for highlight.js/markdown-it; intentionally NOT allow-same-origin. -->
+          <iframe id="preview-frame" sandbox="allow-scripts allow-forms allow-popups">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    {% include "outline.html.in" %}
+
+    <div id="statusbar" role="status" aria-live="polite">
+      <div id="vendor">
+        <span class="vendor-brand">Powered by <img class="vendor-logo" src="__kbook/icons/kbook_text_160x40.png" alt="KBook"></span>
+        <span class="vendor-brand">v2.0</span>
+        <span class="vendor-build-time">Built on {{ BUILD_TIME[:10] }}</span>
+      </div>
+      <div id="status-left"><span class="codicon codicon-book"></span> —</div>
+      <div id="status-center">Ready.</div>
+      <div id="status-right">WRAP: ON • PANEL: ON</div>
+    </div>
+
+    <div class="gutter gutter-left" role="separator" aria-orientation="vertical" aria-label="Resize left panel"
+      tabindex="0" title="Drag to resize • Double-click to reset"></div>
+    <div class="gutter gutter-right" role="separator" aria-orientation="vertical" aria-label="Resize right panel"
+      tabindex="0" title="Drag to resize • Double-click to reset"></div>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.3.2/markdown-it.min.js"></script>
+
+  <script type="module" src="__kbook/js/ui/layout.js"></script>
+  <script type="module" src="__kbook/js/ui/app.js"></script>
+</body>
+
+</html>

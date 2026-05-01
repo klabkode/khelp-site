@@ -1,0 +1,77 @@
+/* -----------------------------------------------------------------------------
+ * Copyright (c) 2026 Kirubakaran
+ * SPDX-License-Identifier: MIT
+ * File        : base.css
+ * Description : Provides global reset rules and shared header primitives.
+ * -------------------------------------------------------------------------- */
+
+/* Global base & resets */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Segoe WPC, Segoe UI, sans-serif;
+  background-color: #1e1e1e;
+}
+
+/* Common clickable hover used in header */
+#sidebar-header h3.clickable {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#sidebar-header h3.clickable:hover {
+  color: #4FC3F7;
+  text-decoration: underline;
+}
+
+/* Common header spanning all panes */
+#main-header {
+  height: 45px;
+  width: 100%;
+  background-color: #1e1e1e;
+  border-bottom: 3px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-icon {
+  height: 22px;
+  width: auto;
+  display: block;
+  flex-shrink: 1;
+  padding: 2px 1px;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #006bb3;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Show editor tools in main header on desktop */
+#main-header #main-tools {
+  display: flex;
+}

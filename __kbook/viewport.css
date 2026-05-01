@@ -1,0 +1,125 @@
+/* -----------------------------------------------------------------------------
+ * Copyright (c) 2026 Kirubakaran
+ * SPDX-License-Identifier: MIT
+ * File        : viewport.css
+ * Description : Provides viewport-specific CSS overrides and layout rules.
+ * -------------------------------------------------------------------------- */
+#app {
+  display: grid;
+  grid-template-columns: 1fr var(--gutter-hit, 8px) min(var(--right-pane, 30vw), 50vw);
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+  margin: 0;
+}
+
+#viewport-main {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+#viewport-main #content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+#viewport-main #editor,
+#viewport-main #preview {
+  flex: 1;
+  min-height: 0;
+}
+
+.gutter-right {
+  grid-column: 2;
+  grid-row: 1;
+  cursor: col-resize;
+  background: transparent;
+  z-index: 10;
+}
+
+.gutter-right.is-dragging {
+  background: var(--ruler-color);
+}
+
+#right {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: var(--min-right, 200px);
+  max-width: 50vw;
+  background: #1b1b1b;
+  border-left: 1px solid #333;
+}
+
+#statusbar {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+}
+
+@media (max-width: 768px) {
+  #app {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+  }
+
+  #viewport-main {
+    grid-row: 1;
+    grid-column: 1 / -1;
+  }
+
+  .gutter-right {
+    display: none;
+  }
+
+  #right {
+    grid-row: 2;
+    max-width: 100%;
+    min-width: 100%;
+    border-left: none;
+    border-top: 1px solid #333;
+  }
+
+  #statusbar {
+    grid-row: 3;
+  }
+}
+
+body.outline-hidden-auto #right,
+body.outline-hidden-auto .gutter-right {
+  display: none !important;
+}
+
+body.outline-hidden-auto #app {
+  grid-template-columns: 1fr !important;
+}
+
+body.outline-hidden-auto #viewport-main {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+body.outline-hidden-user #right,
+body.outline-hidden-user .gutter-right {
+  display: none !important;
+}
+
+body.outline-hidden-user #app {
+  grid-template-columns: 1fr !important;
+}
+
+body.outline-hidden-user #viewport-main {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#editor-toolbar #toggle-outline-panel.toggle-hidden {
+  display: none !important;
+}

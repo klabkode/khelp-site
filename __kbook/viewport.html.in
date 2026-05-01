@@ -1,0 +1,93 @@
+<!--
+  Copyright (c) 2026 Kirubakaran
+  SPDX-License-Identifier: MIT
+  File        : viewport.html.in
+  Description : Viewport HTML template.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=0.85, minimum-scale=0.5, maximum-scale=3, user-scalable=yes" />
+  <title>KBook Viewport</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📘</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="__kbook/styles.css" />
+  <link rel="stylesheet" href="__kbook/viewport.css" /> <!-- viewport-only overrides -->
+
+  <!-- Codicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vscode/codicons/dist/codicon.css">
+
+  <!-- Markdown/Highlight -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.3.2/markdown-it.min.js"></script>
+</head>
+
+<body class="vscode-theme-dark viewport-app">
+  <div id="app" role="application" aria-label="Viewport Shell">
+
+    <!-- Editor/Preview area -->
+    <div id="viewport-main" aria-label="Editor">
+
+      <!-- Toolbar -->
+      <div id="editor-toolbar">
+        <div id="tabs"></div>
+        <span id="nav-back" class="codicon codicon-arrow-left" title="Navigate Back (Alt+←)"></span>
+        <span id="nav-forward" class="codicon codicon-arrow-right" title="Navigate Forward (Alt+→)"></span>
+        <div class="editor-tools">
+          <span id="editor-preview" class="codicon codicon-eye" title="Toggle Preview (MD/HTML)"></span>
+          <span id="editor-permalink" class="codicon codicon-link" title="Copy permalink"></span>
+          <span id="editor-copy-path" class="codicon codicon-copy" title="Copy file path"></span>
+          <span id="editor-search" class="codicon codicon-search" title="Search (Ctrl+F)"></span>
+          <span id="editor-wrap" class="codicon codicon-word-wrap" title="Toggle Word Wrap (Alt+c)"></span>
+          <span id="editor-minimap" class="codicon codicon-map" title="Toggle Minimap (Alt+m)"></span>
+          <span id="editor-save" class="codicon codicon-download" title="Download file (Ctrl+s)"></span>
+          <span id="scroll-toggle" class="codicon codicon-fold" title="Scroll to bottom"></span>
+        </div>
+        <span id="toggle-outline-panel" class="codicon codicon-layout-sidebar-right" title="Hide Outline panel"></span>
+      </div>
+
+      <!-- Breadcrumbs -->
+      <div id="breadcrumbs" aria-label="Breadcrumbs"></div>
+
+      <!-- Editor/Preview -->
+      <div id="content">
+        <div id="editor"></div>
+        <div id="preview">
+          <iframe id="preview-frame" sandbox="allow-same-origin allow-scripts allow-forms allow-popups"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right gutter (resizable) -->
+    <div class="gutter-right" role="separator" aria-orientation="vertical" tabindex="0"></div>
+
+    <!-- Right outline panel -->
+    {% include "outline.html.in" %}
+
+    <!-- Status bar -->
+    <div id="statusbar" role="status" aria-live="polite">
+      <div id="vendor">
+        <span class="vendor-brand">Powered by <img class="vendor-logo" src="__kbook/icons/kbook_text_160x40.png" alt="KBook"></span>
+        <span class="vendor-brand">v2.0</span>
+        <span class="vendor-build-time">Built on {{ BUILD_TIME[:10] }}</span>
+      </div>
+      <div id="status-left"><span class="codicon codicon-book"></span> —</div>
+      <div id="status-center">Ready.</div>
+      <div id="status-right">WRAP: ON • PANEL: ON</div>
+    </div>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="__kbook/js/ui/layout.js"></script>
+  <script type="module" src="__kbook/js/ui/viewport.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+/* -----------------------------------------------------------------------------
+ * Copyright (c) 2026 Kirubakaran
+ * SPDX-License-Identifier: MIT
+ * File        : layout.css
+ * Description : Provides desktop grid layout and resizable panel structure.
+ * -------------------------------------------------------------------------- */
+
+/*
+  Desktop grid layout with adjustable left & right panels.
+  Left: #sidebar, Center: #main, Right: #right, Footer: #statusbar
+  Outline panel stays in #right; all editor widgets live in #main.
+*/
+
+:root {
+  --left-pane: 240px;
+  --right-pane: var(--left-pane);
+  --min-left: 160px;
+  --max-left: 600px;
+  --min-right: var(--min-left);
+  --max-right: var(--max-left);
+  --ruler-color: #007acc;
+  --ruler-width: 2px;
+  --gutter-hit: 8px;
+}
+
+/* Top-level grid: three columns + status row */
+#app {
+  position: relative;
+  display: grid;
+  height: calc(100vh - 45px);
+  width: 100%;
+  grid-template-columns:
+    minmax(var(--min-left), var(--left-pane)) minmax(320px, 1fr) minmax(var(--min-right), min(var(--right-pane), 50vw));
+  grid-template-rows: 1fr 24px;
+  gap: 0;
+}
+
+/* Ensure grid children can shrink/grow (VERY IMPORTANT for Monaco) */
+#sidebar,
+#main,
+#right {
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Place items */
+#sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#main {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+#right {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+#statusbar {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+/* Left sidebar */
+#app #sidebar {
+  width: auto !important;
+  background: #1b1b1b;
+  color: #ccc;
+  border-right: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Sticky header pinned at the top of the sidebar */
+#sidebar-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #2d2d2d;
+}
+
+/* The file tree is the ONLY scrollable area in the sidebar */
+#file-tree {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 10px 1px 1px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#main {
+  display: grid;
+  grid-template-rows: 40px 25px 1fr;
+  background: #1e1e1e;
+  color: #3f0d0d;
+  min-height: 0;
+}
+
+/* toolbar and breadcrumbs visual styles are defined in toolbar.css; keep layout-only rules here */
+#editor-toolbar {
+  display: block;
+}
+
+#breadcrumbs {
+  display: block;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+#editor {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#preview {
+  display: none;
+}
+
+/* JS controls preview visibility */
+
+/* Right panel (Outline only) */
+#right {
+  background: #1b1b1b;
+  border-left: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#outline-panel {
+  height: 100%;
+  overflow: auto;
+}
+
+/* === Outline user-hide (manual toggle) === */
+body.outline-hidden-user #right,
+body.outline-hidden-user .gutter-right {
+  display: none !important;
+}
+
+body.outline-hidden-user #app {
+  grid-template-columns: minmax(var(--min-left), var(--left-pane)) 1fr !important;
+}
+
+body.outline-hidden-user #main {
+  grid-column: 2 / 3;
+}
+
+/* Status bar */
+#statusbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0f0f0f;
+  color: #9da3ad;
+  padding: 0 12px;
+  font-size: 12px;
+  border-top: 1px solid #333;
+}
+
+/* Gutters */
+.gutter {
+  position: absolute;
+  width: var(--gutter-hit);
+  cursor: col-resize;
+  user-select: none;
+  touch-action: none;
+  outline: none;
+  background: transparent;
+}
+
+.gutter::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: var(--ruler-width);
+  transform: translateX(-50%);
+  background: transparent;
+  pointer-events: none;
+  transition: background 120ms ease;
+}
+
+.gutter:hover::before,
+.gutter.is-dragging::before,
+.gutter:focus-visible::before {
+  background: var(--ruler-color);
+}
+
+.gutter-left {
+  left: 0;
+}
+
+.gutter-right {
+  right: 0;
+}

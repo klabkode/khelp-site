@@ -1,0 +1,25 @@
+<!--
+  Copyright (c) 2026 Kirubakaran
+  SPDX-License-Identifier: MIT
+  File        : outline.html.in
+  Description : Provides the right panel for active chapter headings (H1-H6).
+-->
+
+<div id="right" aria-label="Sidebar Right">
+  <aside id="outline-panel">
+    <div id="outline-header">
+      <span class="title">Outline</span>
+    </div>
+
+    <section id="outline-headings-container" class="outline-container is-active">
+      <div class="outline-controls">
+        <div class="outline-search-wrapper" data-history-context="tags-filter">
+          <input id="chapter-toc-filter" type="text" placeholder="Filter headings ..." />
+          <span id="chapter-toc-go-btn" class="codicon codicon-arrow-right outline-search-icon"
+            aria-label="Filter" role="button" tabindex="0"></span>
+        </div>
+      </div>
+      <ul id="chapter-toc-list" class="kbook-chapter-toc" role="tree" aria-label="Active chapter headings"></ul>
+    </section>
+  </aside>
+</div>

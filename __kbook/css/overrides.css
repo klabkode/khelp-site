@@ -1,0 +1,15 @@
+/* -----------------------------------------------------------------------------
+ * Copyright (c) 2026 Kirubakaran
+ * SPDX-License-Identifier: MIT
+ * File        : overrides.css
+ * Description : Provides targeted visual overrides for outline components.
+ * -------------------------------------------------------------------------- */
+
+/* Jump highlight — matches dashboard line-highlight standard */
+.monaco-editor .line-highlight {
+  background: rgba(79, 195, 247, 0.12);
+}
+
+.line-glyph {
+  background: #4FC3F7;
+}

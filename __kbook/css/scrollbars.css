@@ -1,0 +1,28 @@
+/* -----------------------------------------------------------------------------
+ * Copyright (c) 2026 Kirubakaran
+ * SPDX-License-Identifier: MIT
+ * File        : scrollbars.css
+ * Description : Provides custom scrollbar appearance across supported browsers.
+ * -------------------------------------------------------------------------- */
+
+/* Thin scrollbars */
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 1px;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #666 transparent;
+}

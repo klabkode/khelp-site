@@ -1,0 +1,184 @@
+# KBook — Usage Guide
+
+KBook is a read-only, web-based markdown book explorer.
+It lets you browse chapters, open files in Monaco, view rendered previews, and navigate headings in an Outline panel.
+
+## Table of Contents
+
+1. Layout Overview
+2. Header Bar
+3. Explorer Panel (Left)
+4. Reader Panel (Center)
+5. Outline Panel (Right)
+6. Status Bar
+7. Tab Management
+8. Search
+9. Resizing Panels
+10. Keyboard Shortcuts
+11. Monaco Features
+12. Build Usage
+
+## Layout Overview
+
+```
+┌───────────────────────────────────────────────────────────────┐
+│ HEADER BAR  [logo | title]             [nav | repo | ? | ⊘ ] │
+├─────────────┬──────────────────────────┬──────────────────────┤
+│             │ tabs + editor tools      │                      │
+│  XPLORER    │ breadcrumbs              │  OUTLINE             │
+│ (file tree) │ editor / preview         │  headings of active  │
+│             │ (read-only Monaco)       │  markdown file       │
+├─────────────┴──────────────────────────┴──────────────────────┤
+│ STATUS BAR   [ lang | status message | line/column, wrap ]    │
+└───────────────────────────────────────────────────────────────┘
+```
+
+The left and right panels are resizable using the vertical gutters.
+
+## Header Bar
+
+| Element | Description |
+|---------|-------------|
+| Logo | Decorative app branding |
+| Title | Title from build argument (first parameter) |
+| Back | Navigate backward in file history (`Alt+Left` / `Alt+Down`) |
+| Forward | Navigate forward in file history (`Alt+Right` / `Alt+Up`) |
+| Repository | Opens repo URL when provided at build time |
+| Help | Opens this `USAGE.md` |
+| Clear Cache | Clears browser cache/local state and reloads |
+| Toggle Outline | Show/hide right panel (`Alt+P`) |
+
+## Explorer Panel (Left)
+
+The left panel displays chapter files from `toc.json`.
+
+### Actions
+
+| Action | Behavior |
+|--------|----------|
+| Click folder | Expand/collapse |
+| Click file | Open file in reader |
+| Expand all icon | Expand all folders |
+| Collapse all icon | Collapse all folders |
+| Search icon | Show/hide file search input |
+
+## Reader Panel (Center)
+
+The center panel hosts Monaco (read-only) and preview rendering.
+
+### Toolbar
+
+| Icon | ID | Action | Shortcut |
+|------|----|--------|----------|
+| Eye | `editor-preview` | Toggle preview | `Alt+V` |
+| Link | `editor-permalink` | Copy permalink for active file/line | - |
+| Copy | `editor-copy-path` | Copy active file path | - |
+| Search | `editor-search` | Open Monaco find | `Ctrl+F` |
+| Wrap | `editor-wrap` | Toggle word wrap | `Alt+C` |
+| Minimap | `editor-minimap` | Toggle minimap | `Alt+M` |
+| Download | `editor-save` | Download active file | `Ctrl+S` |
+
+### Preview
+
+Preview supports markdown and other file previews through templates under `__kbook/templates/`.
+
+## Outline Panel (Right)
+
+The Outline panel shows headings for the active markdown file.
+
+- Source of truth is the currently active editor tab content.
+- Heading levels (`H1`-`H6`) are indented in the list.
+- Clicking an outline row navigates to the heading line in editor mode.
+- In preview mode, clicking sends a scroll request to the preview iframe.
+
+If a file has no headings, the panel shows: `No headings in this chapter.`
+
+## Status Bar
+
+The status bar shows:
+
+- Vendor branding
+- Active file/language state
+- Runtime messages (loading, navigation, warnings)
+- Cursor and editor mode information
+
+## Tab Management
+
+| Action | How |
+|--------|-----|
+| Open file | Click file in Explorer |
+| Switch tab | Click tab, `Alt+\`` or `Alt+1`..`Alt+9` |
+| Close tab | Click `x` on tab or `Alt+W` |
+| Reopen closed tab | `Alt+O` |
+| Open in viewport | `Alt+N` |
+
+Tabs and active path are restored from local storage.
+
+## Search
+
+KBook currently provides two search flows:
+
+1. File search (left Explorer): filters visible file tree rows.
+2. Outline filter (right panel): filters headings in current outline list.
+
+Shortcut focus:
+
+- `Alt+G` focuses file search.
+- `Alt+Shift+G` focuses outline filter.
+
+## Resizing Panels
+
+- Drag left or right gutter to resize panels.
+- Double-click a gutter to reset that panel width.
+- Widths are persisted in local storage.
+
+## Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl+S` | Download active file |
+| `Ctrl+F` | Monaco find |
+| `Alt+Left`, `Alt+Down` | Back |
+| `Alt+Right`, `Alt+Up` | Forward |
+| `Alt+W` | Close active tab |
+| `Alt+O` | Reopen last closed tab |
+| `Alt+\`` | Switch to next tab |
+| `Alt+1`..`Alt+9` | Switch tab by index |
+| `Alt+N` | Open active file in viewport |
+| `Alt+P` | Toggle Outline panel |
+| `Alt+V` | Toggle preview |
+| `Alt+M` | Toggle minimap |
+| `Alt+C` | Toggle word wrap |
+| `Alt+G` | Focus file search |
+| `Alt+Shift+G` | Focus outline filter |
+
+## Monaco Features
+
+Monaco is read-only in KBook. Available features include:
+
+- Syntax highlighting
+- Find (`Ctrl+F`)
+- Go to line (`Ctrl+G`)
+- Folding
+- Bracket matching
+- Minimap toggle
+- Word wrap toggle
+
+## Build Usage
+
+KBook is generated by `kbook-build`.
+
+Usage:
+
+```bash
+kbook-build <title> <toc> [repo]
+```
+
+Examples:
+
+```bash
+kbook-build "My Book" ./chapters
+kbook-build "My Book" ./chapters https://github.com/example/repo
+```
+
+---

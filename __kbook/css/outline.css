@@ -1,0 +1,272 @@
+/* -----------------------------------------------------------------------------
+ * Copyright (c) 2026 Kirubakaran
+ * SPDX-License-Identifier: MIT
+ * File        : outline.css
+ * Description : Provides outline panel and heading filter styling.
+ * -------------------------------------------------------------------------- */
+
+/* Outline panel (right panel) */
+#outline-panel {
+  border-left: 1px solid #333;
+  background: #1b1b1b;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#outline-header {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  padding: 0 8px;
+  position: sticky;
+  top: 0;
+  background: #1b1b1b;
+  z-index: 2;
+  position: relative;
+}
+
+#outline-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #4FC3F7;
+  pointer-events: none;
+}
+
+#outline-header .title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  color: #bbb;
+  line-height: 35px;
+}
+
+.outline-progress {
+  height: 4px;
+  margin: 0 8px 6px 8px;
+  background: #2a2a2a;
+  border-radius: 2px;
+  overflow: hidden;
+  display: none;
+}
+
+.outline-progress .bar {
+  width: 0%;
+  height: 100%;
+  background: #4FC3F7;
+  transition: width 0.15s linear;
+}
+
+.outline-container {
+  display: none;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.outline-container.is-active {
+  display: flex;
+}
+
+.outline-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 8px 0 8px;
+}
+
+.outline-search-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.outline-search-wrapper input[type="text"] {
+  width: 100%;
+  padding: 4px 28px 4px 8px;
+  font-size: 12px;
+  color: #ccc;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  border-radius: 0;
+}
+
+.outline-search-wrapper input[type="text"]:focus {
+  outline: none;
+  border-bottom-color: #4FC3F7;
+}
+
+.outline-search-icon {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  font-size: 16px;
+  color: #888;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 2px;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.outline-search-icon:hover {
+  color: #fff;
+  background-color: #2a2a2a;
+}
+
+.outline-search-icon:active {
+  color: #62CFFF;
+}
+
+.outline-clear-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  font-size: 16px;
+  color: #888;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 2px;
+  user-select: none;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.outline-clear-icon:hover {
+  color: #fff;
+  background-color: #2a2a2a;
+}
+
+.outline-clear-icon:active {
+  color: #62CFFF;
+}
+
+.outline-controls input[type="text"] {
+  flex: 1;
+  min-width: 0;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #ccc;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  border-radius: 0;
+}
+
+.outline-controls input[type="text"]:focus,
+#outline-tags-filter:focus {
+  outline: none;
+  border-bottom-color: #4FC3F7;
+}
+#outline-headings-container .outline-controls {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+#chapter-toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 5px 8px 5px;
+  overflow: auto;
+  overflow-x: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.outline-history-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 320px;
+  overflow-y: auto;
+  z-index: 1000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #252526;
+  border: 1px solid #444;
+  border-top: none;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  scrollbar-width: thin;
+  scrollbar-color: #5a5d5e #252526;
+}
+
+.outline-history-dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.outline-history-dropdown::-webkit-scrollbar-track {
+  background: #252526;
+  border-radius: 1px;
+}
+
+.outline-history-dropdown::-webkit-scrollbar-thumb {
+  background: #5a5d5e;
+  border-radius: 1px;
+}
+
+.outline-history-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #6c7072;
+}
+
+.outline-history-dropdown li {
+  padding: 6px 10px;
+  cursor: pointer;
+  color: #ccc;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.1s;
+}
+
+.outline-history-dropdown li:last-child {
+  border-bottom: none;
+}
+
+.outline-history-dropdown li:hover {
+  background: #3a3d3e;
+  color: #fff;
+}
+
+.outline-history-dropdown li[aria-selected="true"] {
+  background: #0e639c;
+  color: #fff;
+}
+
+.outline-history-dropdown.empty {
+  padding: 8px 10px;
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  border: none;
+  box-shadow: none;
+  background: #1b1b1b;
+}
+
+.outline-history-dropdown.empty li {
+  all: unset;
+  display: none;
+}

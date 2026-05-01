@@ -1,0 +1,2603 @@
+{
+  "version": 1,
+  "generated_at": "2026-05-01T18:38:53",
+  "summary": "SUMMARY.md",
+  "chapter_count": 235,
+  "root_index": {
+    "title": "INDEX",
+    "path": "README.md"
+  },
+  "entries": [
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "1. ANDROID",
+      "line": 5
+    },
+    {
+      "type": "chapter",
+      "title": "ADB",
+      "path": "android/adb.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 6,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "BOOT ENTRY",
+      "path": "android/boot-entry.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 7,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "FASTBOOT",
+      "path": "android/fastboot.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 8,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "2. APT",
+      "line": 10
+    },
+    {
+      "type": "chapter",
+      "title": "DOWNLOAD DEBFILE",
+      "path": "apt/download-debfile.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 11,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "FORCE DELETE",
+      "path": "apt/force-delete.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 12,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "GET SOURCE",
+      "path": "apt/get-source.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 13,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "INSTALL LOCAL",
+      "path": "apt/install-local.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 14,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "RELEASE INFO",
+      "path": "apt/release-info.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 15,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "3. BASH",
+      "line": 17
+    },
+    {
+      "type": "chapter",
+      "title": "ARRAY",
+      "path": "bash/array.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 18,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "AUTOCOMPLETE",
+      "path": "bash/autocomplete.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 19,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "BARENAME",
+      "path": "bash/barename.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 20,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "CLEAR LINE",
+      "path": "bash/clear-line.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 21,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "COLORS",
+      "path": "bash/colors.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 22,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "COMMENT",
+      "path": "bash/comment.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 23,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "DEFAULT VALUE",
+      "path": "bash/default-value.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 24,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "EXEC",
+      "path": "bash/exec.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 25,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "EXIT STATUS",
+      "path": "bash/exit-status.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 26,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "FILE TEST",
+      "path": "bash/file-test.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 27,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "FUN",
+      "path": "bash/fun.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 28,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "GETOPT",
+      "path": "bash/getopt.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 29,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "GOTO",
+      "path": "bash/goto.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 30,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "HISTORY",
+      "path": "bash/history.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 31,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "IF CASE",
+      "path": "bash/if-case.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 32,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "INFINITE",
+      "path": "bash/infinite.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 33,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "INTERACTIVE",
+      "path": "bash/interactive.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 34,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "LOOP",
+      "path": "bash/loop.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 35,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "LOOP FILES",
+      "path": "bash/loop_files.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 36,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PARAMETER EXPANSION",
+      "path": "bash/parameter-expansion.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 37,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PARAMETER TRANSFORMATION",
+      "path": "bash/parameter-transformation.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 38,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PATH",
+      "path": "bash/path.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 39,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PID",
+      "path": "bash/pid.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 40,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PREFIX",
+      "path": "bash/prefix.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 41,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "READ CONFIG",
+      "path": "bash/read-config.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 42,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "READ FILE",
+      "path": "bash/read-file.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 43,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "REDIRECT STDOUT STDERR",
+      "path": "bash/redirect-stdout-stderr.sh",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 44,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "REDIRECT",
+      "path": "bash/redirect.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 45,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "RUN AS ROOT",
+      "path": "bash/run-as-root.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 46,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SED USAGE",
+      "path": "bash/sed-usage.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 47,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SET",
+      "path": "bash/set.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 48,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SHELL",
+      "path": "bash/shell.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 49,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "STRLEN",
+      "path": "bash/strlen.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 50,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "STRSTR",
+      "path": "bash/strstr.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 51,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SUBSHELL",
+      "path": "bash/subshell.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 52,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SWITCH CASE",
+      "path": "bash/switch-case.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 53,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "TIME",
+      "path": "bash/time.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 54,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "TOGGLE",
+      "path": "bash/toggle.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 55,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "TRAVERSE DIRECTORIES",
+      "path": "bash/traverse-directories.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 56,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "USAGE",
+      "path": "bash/usage.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 57,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "4. BUSYBOX",
+      "line": 59
+    },
+    {
+      "type": "chapter",
+      "title": "USAGE",
+      "path": "busybox/usage.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 60,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "5. C",
+      "line": 62
+    },
+    {
+      "type": "chapter",
+      "title": "BITWISE FLAGS",
+      "path": "c/bitwise-flags.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 63,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "DATATYPES",
+      "path": "c/datatypes.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 64,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "LDPRELOAD",
+      "path": "c/ldpreload.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 65,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "MACROS",
+      "path": "c/macros.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 66,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "STRUCT",
+      "path": "c/struct.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 67,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "6. CALLBACKS",
+      "line": 69
+    },
+    {
+      "type": "chapter",
+      "title": "LOGIT",
+      "path": "callbacks/logit.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 70,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PROTOTYPES",
+      "path": "callbacks/prototypes.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 71,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "7. CHROOT",
+      "line": 73
+    },
+    {
+      "type": "chapter",
+      "title": "SETUP CHROOT",
+      "path": "chroot/setup-chroot.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 74,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "8. COMMANDS",
+      "line": 76
+    },
+    {
+      "type": "chapter",
+      "title": "ALTERNATIVES",
+      "path": "commands/alternatives.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 77,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "CARRIAGE RETURN",
+      "path": "commands/carriage-return.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 78,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "CAT",
+      "path": "commands/cat.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 79,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "CTAGS",
+      "path": "commands/ctags.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 80,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "DATE",
+      "path": "commands/date.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 81,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "EXPORT",
+      "path": "commands/export.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 82,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "FIND",
+      "path": "commands/find.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 83,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "GREP",
+      "path": "commands/grep.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 84,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "HIGHLIGHT",
+      "path": "commands/highlight.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 85,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "KILL",
+      "path": "commands/kill.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 86,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "LDCONFIG",
+      "path": "commands/ldconfig.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 87,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "MMV",
+      "path": "commands/mmv.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 88,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PASSWD",
+      "path": "commands/passwd.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 89,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PIDSTAT",
+      "path": "commands/pidstat.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 90,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PKG CONFIG",
+      "path": "commands/pkg-config.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 91,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PS",
+      "path": "commands/ps.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 92,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "RSYNC",
+      "path": "commands/rsync.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 93,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SCREEN",
+      "path": "commands/screen.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 94,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "TMUX",
+      "path": "commands/tmux.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 95,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "TPUT",
+      "path": "commands/tput.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 96,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "TREE",
+      "path": "commands/tree.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 97,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "TRUNCATE",
+      "path": "commands/truncate.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 98,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "UFW",
+      "path": "commands/ufw.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 99,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "XARGS",
+      "path": "commands/xargs.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 100,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "9. DEBUILD",
+      "line": 102
+    },
+    {
+      "type": "chapter",
+      "title": "DEBMAKE",
+      "path": "debuild/debmake.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 103,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "DEBUILD",
+      "path": "debuild/debuild.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 104,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SHLIBDEPS",
+      "path": "debuild/shlibdeps.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 105,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "10. DOCKER",
+      "line": 107
+    },
+    {
+      "type": "chapter",
+      "title": "AUTOCOMPLETE",
+      "path": "docker/autocomplete.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 108,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "AUTOSTART",
+      "path": "docker/autostart.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 109,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "BUILD",
+      "path": "docker/build.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 110,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "BUILDX BUILD",
+      "path": "docker/buildx-build.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 111,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "BUILDX",
+      "path": "docker/buildx.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 112,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "COMMIT",
+      "path": "docker/commit.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 113,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "COMPOSE",
+      "path": "docker/compose.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 114,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "INSTALL DOCKER",
+      "path": "docker/install-docker.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 115,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "INSTALL UBUNTU",
+      "path": "docker/install-ubuntu.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 116,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "INSTALL",
+      "path": "docker/install.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 117,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "MULTI ARCH IMAGE",
+      "path": "docker/multi-arch-image.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 118,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "NOSUDO",
+      "path": "docker/nosudo.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 119,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "REST API",
+      "path": "docker/rest-api.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 120,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "RUNNING GUI APPS",
+      "path": "docker/running-gui-apps.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 121,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "USAGE",
+      "path": "docker/usage.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 122,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "11. DOCKER FILE",
+      "line": 124
+    },
+    {
+      "type": "chapter",
+      "title": "ADD USER",
+      "path": "docker-file/add-user.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 125,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "UBUNTU",
+      "path": "docker-file/ubuntu.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 126,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "VNC SERVER",
+      "path": "docker-file/vnc-server.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 127,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "12. DPKG",
+      "line": 129
+    },
+    {
+      "type": "chapter",
+      "title": "ADD TRUSTED REPO",
+      "path": "dpkg/add-trusted-repo.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 130,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "FORCE REMOVE",
+      "path": "dpkg/force-remove.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 131,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "INSTALL LOCAL",
+      "path": "dpkg/install-local.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 132,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "13. ELF",
+      "line": 134
+    },
+    {
+      "type": "chapter",
+      "title": "SYMBOLS",
+      "path": "elf/symbols.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 135,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "14. ERRORS",
+      "line": 137
+    },
+    {
+      "type": "chapter",
+      "title": "APT",
+      "path": "errors/apt.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 138,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "ERRNO",
+      "path": "errors/errno.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 139,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "GCC",
+      "path": "errors/gcc.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 140,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PIP",
+      "path": "errors/pip.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 141,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "15. GCOV",
+      "line": 143
+    },
+    {
+      "type": "chapter",
+      "title": "GCOV",
+      "path": "gcov/gcov.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 144,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "GCOVR",
+      "path": "gcov/gcovr.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 145,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "GCOVR MAKEFILE",
+      "path": "gcov/gcovr_makefile.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 146,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "16. GDB",
+      "line": 148
+    },
+    {
+      "type": "chapter",
+      "title": "GDBSERVER",
+      "path": "gdb/gdbserver.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 149,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SOURCE",
+      "path": "gdb/source.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 150,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "17. GENERAL",
+      "line": 152
+    },
+    {
+      "type": "chapter",
+      "title": "PERCENTAGE",
+      "path": "general/percentage.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 153,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "18. GIT",
+      "line": 155
+    },
+    {
+      "type": "chapter",
+      "title": "APPLY",
+      "path": "git/apply.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 156,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "BRANCH",
+      "path": "git/branch.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 157,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "CLEAN",
+      "path": "git/clean.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 158,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "CLONE",
+      "path": "git/clone.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 159,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "CONFIGS",
+      "path": "git/configs.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 160,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "CONFLICTS",
+      "path": "git/conflicts.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 161,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "DIFF",
+      "path": "git/diff.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 162,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "LINE FEED",
+      "path": "git/line-feed.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 163,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "LOG",
+      "path": "git/log.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 164,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "LS FILES",
+      "path": "git/ls-files.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 165,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "MERGE",
+      "path": "git/merge.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 166,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PATCH",
+      "path": "git/patch.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 167,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PRETTY",
+      "path": "git/pretty.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 168,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PROMPT",
+      "path": "git/prompt.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 169,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PULL",
+      "path": "git/pull.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 170,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PUSH ALL",
+      "path": "git/push-all.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 171,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PUSH",
+      "path": "git/push.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 172,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "REBASE",
+      "path": "git/rebase.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 173,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "REMOTE",
+      "path": "git/remote.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 174,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "RESET",
+      "path": "git/reset.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 175,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "REV PARSE",
+      "path": "git/rev-parse.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 176,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "REVERT",
+      "path": "git/revert.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 177,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SERVER",
+      "path": "git/server.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 178,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SSH",
+      "path": "git/ssh.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 179,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "STASH",
+      "path": "git/stash.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 180,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "TAG",
+      "path": "git/tag.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 181,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "TRAVERSE",
+      "path": "git/traverse.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 182,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "UPSTREAM",
+      "path": "git/upstream.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 183,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "19. GITHUB",
+      "line": 185
+    },
+    {
+      "type": "chapter",
+      "title": "DOXYGEN WORKFLOW",
+      "path": "github/doxygen-workflow.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 186,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "MDBOOK WORKFLOW",
+      "path": "github/mdbook-workflow.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 187,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PAT",
+      "path": "github/pat.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 188,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PRINTENV WORKFLOW",
+      "path": "github/printenv-workflow.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 189,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "20. GRUB",
+      "line": 191
+    },
+    {
+      "type": "chapter",
+      "title": "BOOT ORDER",
+      "path": "grub/boot-order.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 192,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "21. HEXDUMP",
+      "line": 194
+    },
+    {
+      "type": "chapter",
+      "title": "STRING",
+      "path": "hexdump/string.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 195,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "22. KHELP",
+      "line": 197
+    },
+    {
+      "type": "chapter",
+      "title": "GREP",
+      "path": "khelp/grep.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 198,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "LIST",
+      "path": "khelp/list.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 199,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "USAGE",
+      "path": "khelp/usage.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 200,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "23. KUBECTL",
+      "line": 202
+    },
+    {
+      "type": "chapter",
+      "title": "INSTALL KUBECTL",
+      "path": "kubectl/install-kubectl.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 203,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "USAGE",
+      "path": "kubectl/usage.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 204,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "24. LOGIT",
+      "line": 206
+    },
+    {
+      "type": "chapter",
+      "title": "FILE",
+      "path": "logit/file.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 207,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "MACRO",
+      "path": "logit/macro.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 208,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "25. MAKE",
+      "line": 210
+    },
+    {
+      "type": "chapter",
+      "title": "CHARACTER NOTATIONS",
+      "path": "make/character-notations.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 211,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "DYNAMIC MAKEFILE",
+      "path": "make/dynamic-makefile.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 212,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "IFDEF",
+      "path": "make/ifdef.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 213,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "INLINE VARIABLES",
+      "path": "make/inline-variables.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 214,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PREFIX",
+      "path": "make/prefix.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 215,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "RUN ALL CMDS",
+      "path": "make/run-all-cmds.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 216,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "STATIC",
+      "path": "make/static.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 217,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "26. NET",
+      "line": 219
+    },
+    {
+      "type": "chapter",
+      "title": "IPOF",
+      "path": "net/ipof.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 220,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "NMCLI",
+      "path": "net/nmcli.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 221,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "OSI",
+      "path": "net/osi.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 222,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SCAN",
+      "path": "net/scan.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 223,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "STATIC IP",
+      "path": "net/static-ip.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 224,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "TOGGLE",
+      "path": "net/toggle.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 225,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "27. OPENGROK",
+      "line": 227
+    },
+    {
+      "type": "chapter",
+      "title": "DOCKER SETUP",
+      "path": "opengrok/docker-setup.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 228,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "INDEXER",
+      "path": "opengrok/indexer.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 229,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "28. PATH",
+      "line": 231
+    },
+    {
+      "type": "chapter",
+      "title": "CGIT",
+      "path": "path/cgit.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 232,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "GITWEB",
+      "path": "path/gitweb.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 233,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "MACBOOK",
+      "path": "path/macbook.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 234,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "29. PYTHON",
+      "line": 236
+    },
+    {
+      "type": "chapter",
+      "title": "DOWNLOAD",
+      "path": "python/download.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 237,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "GET PIP2",
+      "path": "python/get-pip2.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 238,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "INSTALL",
+      "path": "python/install.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 239,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "NOTES",
+      "path": "python/notes.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 240,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PIP",
+      "path": "python/pip.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 241,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "VENV",
+      "path": "python/venv.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 242,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "30. ROBOT",
+      "line": 244
+    },
+    {
+      "type": "chapter",
+      "title": "TEMPLATE",
+      "path": "robot/template.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 245,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "USAGE",
+      "path": "robot/usage.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 246,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "VARIABLES",
+      "path": "robot/variables.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 247,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "31. SORT",
+      "line": 249
+    },
+    {
+      "type": "chapter",
+      "title": "BIGFILES",
+      "path": "sort/bigfiles.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 250,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SORT NTH FIELD",
+      "path": "sort/sort-nth-field.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 251,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "32. SYSTEMCTL",
+      "line": 253
+    },
+    {
+      "type": "chapter",
+      "title": "SERVICE",
+      "path": "systemctl/service.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 254,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "33. TCPDUMP",
+      "line": 256
+    },
+    {
+      "type": "chapter",
+      "title": "COMMANDS",
+      "path": "tcpdump/commands.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 257,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "FILTERS",
+      "path": "tcpdump/filters.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 258,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "LIST INTERFACES",
+      "path": "tcpdump/list-interfaces.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 259,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "OPTIONS",
+      "path": "tcpdump/options.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 260,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "READ PCAP",
+      "path": "tcpdump/read-pcap.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 261,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "34. USER",
+      "line": 263
+    },
+    {
+      "type": "chapter",
+      "title": "USER",
+      "path": "user/readme.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 264,
+      "children": [
+        {
+          "type": "chapter",
+          "title": "ADDUSER",
+          "path": "user/adduser.md",
+          "fragment": "",
+          "draft": false,
+          "depth": 1,
+          "line": 265,
+          "children": []
+        },
+        {
+          "type": "chapter",
+          "title": "PRINT USERNAME",
+          "path": "user/print-username.md",
+          "fragment": "",
+          "draft": false,
+          "depth": 1,
+          "line": 266,
+          "children": []
+        },
+        {
+          "type": "chapter",
+          "title": "SUDOER",
+          "path": "user/sudoer.md",
+          "fragment": "",
+          "draft": false,
+          "depth": 1,
+          "line": 267,
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "35. VIM",
+      "line": 269
+    },
+    {
+      "type": "chapter",
+      "title": "API",
+      "path": "vim/API.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 270,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "AUTOCOMPLETE",
+      "path": "vim/autocomplete.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 271,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "CLEANUP",
+      "path": "vim/cleanup.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 272,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "COLORS",
+      "path": "vim/colors.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 273,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "CONFIGS",
+      "path": "vim/configs.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 274,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "FILEFORMAT",
+      "path": "vim/fileformat.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 275,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "IDE",
+      "path": "vim/IDE.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 276,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "KEYMAPPINGS",
+      "path": "vim/keymappings.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 277,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "NAVIGATE QUOTES",
+      "path": "vim/navigate-quotes.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 278,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "PATH",
+      "path": "vim/path.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 279,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "RELOAD RCFILE",
+      "path": "vim/reload-rcfile.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 280,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "SORT",
+      "path": "vim/sort.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 281,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "VARIABLES",
+      "path": "vim/variables.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 282,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "VIMDIFF",
+      "path": "vim/vimdiff.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 283,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "VIMTAG",
+      "path": "vim/vimtag.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 284,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "36. VIRTUALBOX",
+      "line": 286
+    },
+    {
+      "type": "chapter",
+      "title": "DISABLE SUDO PASSWD",
+      "path": "virtualbox/disable-sudo-passwd.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 287,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "VBOXSF",
+      "path": "virtualbox/vboxsf.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 288,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "37. VNC",
+      "line": 290
+    },
+    {
+      "type": "chapter",
+      "title": "CLEAN X11 LOCKS",
+      "path": "vnc/clean_x11_locks.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 291,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "COMMANDS",
+      "path": "vnc/commands.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 292,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "EXPORT GTK THEME",
+      "path": "vnc/export_gtk_theme.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 293,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "NOVNC",
+      "path": "vnc/novnc.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 294,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "RESOLUTION",
+      "path": "vnc/resolution.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 295,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "XRANDR",
+      "path": "vnc/xrandr.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 296,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "XSTARTUP",
+      "path": "vnc/xstartup.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 297,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "38. WM",
+      "line": 299
+    },
+    {
+      "type": "chapter",
+      "title": "BARE WM",
+      "path": "wm/bare-wm.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 300,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "DESKTOP STACK",
+      "path": "wm/desktop-stack.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 301,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "GDM3",
+      "path": "wm/gdm3.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 302,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "LITEWM",
+      "path": "wm/litewm.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 303,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "METACITY",
+      "path": "wm/metacity.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 304,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "39. WWW",
+      "line": 306
+    },
+    {
+      "type": "chapter",
+      "title": "CGI BIN",
+      "path": "www/cgi-bin.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 307,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "CGI PATH",
+      "path": "www/cgi-path.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 308,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "CGIT",
+      "path": "www/cgit.conf",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 309,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "GITWEB",
+      "path": "www/gitweb.conf",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 310,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "HOME.CONF",
+      "path": "www/home.conf.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 311,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "INDEX",
+      "path": "www/index.html",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 312,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "KTAGS",
+      "path": "www/ktags.conf",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 313,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "NEW SITE",
+      "path": "www/new-site.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 314,
+      "children": []
+    },
+    {
+      "type": "chapter",
+      "title": "WEBSERVER",
+      "path": "www/webserver.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 315,
+      "children": []
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "title": "40. YAML",
+      "line": 317
+    },
+    {
+      "type": "chapter",
+      "title": "LEARNYAML",
+      "path": "yaml/learnyaml.md",
+      "fragment": "",
+      "draft": false,
+      "depth": 0,
+      "line": 318,
+      "children": []
+    }
+  ]
+}
